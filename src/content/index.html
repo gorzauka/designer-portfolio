@@ -1,40 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+<body>
+    <header class="site-header">
+        <nav class="navigation">
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a class="navigation__link" href="#about">About me</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#work">Work</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
+            </ul>
+            <button class="navigation__switcher navigation__switcher--js" aria-label="Open menu"></button>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <img class="about__picture" src="assets/img/image_placeholder.jpg" alt="Portrait of Gosia" />
+            <h1 class="about__header">
+                Hi! I'm Gosia
+            </h1>
+            <p class="about__paragraph">
+                Say cheese camembert de normandie cut the cheese. Emmental everyone loves smelly cheese roquefort
+                emmental who moved my cheese squirty cheese monterey jack.<br>
+            </p>
+        </section>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+        <section id="work" class="work">
+            <h2 class="work__header">Selected work</h2>
+            <div class="flex">
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+                <a class="work__link" href="#"><img class="work__picture" src="assets/img/image_placeholder.jpg"
+                        alt="Go to Personal branding" /></a>
+            </div>
 
+        </section>
+        <section class="contact" id="contact">
+            <form action="htpps://dev.cotenfrontend.pl" method="POST" class="contact__form">
+                <p class="contact__label">
+                    <label for="name">*Name:</label>
+                    <input class="contact__item" required type="text" name="name" id="name">
+                </p>
+                <p class="contact__label">
+                    <label for="name">*Surname:</label>
+                    <input class="contact__item" required type="text" name="surname" id="surname">
+                </p>
+                <p class="contact__label">
+                    <label for="email">*E-mail adress:</label>
+                    <input class="contact__item" required type="text" name="email" id="email">
+                </p>
+                <p class="contact__label">
+                    <label for="textarea">*Message:</label>
+                    <textarea class="contact__item" required name="message" id="message"></textarea>
+                </p>
+                <input class="contact__submit" type="submit">
+
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer"><img class="footer__picture" src="assets/img/image_placeholder.jpg" alt="Portrait of Gosia" />
+    </footer>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
