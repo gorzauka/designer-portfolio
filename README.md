@@ -1,9 +1,16 @@
-# wtf-gulp-starter
+![A main section from the website](src/assets/img/cover.png)
 
-`npm install -g gulp-cli`
+# Małgorzata Siłkowska - Graphic designer portfolio
 
-`npm install`
+My personal website built during WTF course ✌
 
-`gulp`
+## Tools & technologies I've used
 
-To publish your page using github pages use `npm run deploy`
+- Visual Studio Code
+- SASS
+- Gulp
+- SVG animations
+- CSS Grid
+- CSS Flexbox
+
+### built with wtf-gulp-starter
